@@ -1,8 +1,3 @@
-const gimnasioStack = {
-    tab: "GimnasiosTab", // Nombre de la pestaña de gimnasios
-    gimnasios: "Gimnasios", // Nombre de la pantalla de gimnasios
-    addGimnasio: "AddGimnasio", // Nombre de la pantalla de agregar gimnasio
-};
 
 const accountStack = {
     tab: "AccountTab", // Nombre de la pestaña de cuentas de usuario
@@ -11,7 +6,34 @@ const accountStack = {
     Register: "Register", // Nombre de la pantalla de registro
 };
 
+const rutinasStack = {
+    tab: "RutinasTab",
+    rutinas: "rutinas"
+
+}
+
+const chatStack = {
+    tab: "ChatTab",
+    chat: "chat"
+}
+
+const notificacionesStack = {
+    tab: "NotificacionesTab",
+    notificaciones: "notificaciones"
+}
+
+const pagosStack = {
+    tab: "PagosTab",
+    pagos: "pagos"
+}
+
+
+
 export const screen = {
-    gimnasio: gimnasioStack, // Agrupa las pantallas relacionadas con gimnasios bajo la propiedad "gimnasio"
+
     account: accountStack, // Agrupa las pantallas relacionadas con cuentas de usuario bajo la propiedad "account"
+    rutinas: rutinasStack,
+    chat: chatStack,
+    notificaciones: notificacionesStack,
+    pagos: pagosStack
 };

@@ -1,9 +1,10 @@
 // Importa la función de inicialización de Firebase desde el SDK de Firebase
 import { initializeApp } from "firebase/app";
+
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
-// Configuración de Firebase para tu aplicación web
+// Configuración de Firebase para la app
 const firebaseConfig = {
     apiKey: "AIzaSyCeehdeIzjhSPo2oBQswGaw4_67158iMNY",
     authDomain: "datos-fisioconectt.firebaseapp.com",

@@ -3,12 +3,11 @@ import { View } from 'react-native';
 import { Input, Icon, Button } from "react-native-elements";
 import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
 import { useNavigation } from "@react-navigation/native";
-import { screen } from "../../../utilidades";
-import Toast from "react-native-toast-message"
-import { initialValues, validationSchema } from "./RegisterForm.data";
-import { useFormik } from "formik";
-import { styles } from "./RegisterForm.styles";
-
+import { screen } from "../../../utilidades"; // Importa rutas de pantalla desde un archivo de utilidades.
+import Toast from "react-native-toast-message"; // Importa un componente de notificación de Toast.
+import { initialValues, validationSchema } from "./RegisterForm.data"; // Importa valores iniciales y esquema de validación desde otro archivo.
+import { useFormik } from "formik"; // Importa la función useFormik de la biblioteca Formik.
+import { styles } from "./RegisterForm.styles"; // Importa estilos desde otro archivo.
 
 /**
  * Componente para el formulario de registro.
