@@ -17,14 +17,14 @@ export const styles = StyleSheet.create({
     textSexo: {
         marginTop: 20,
         marginBottom: 0, // Margen superior desde el elemento anterior
-        marginLeft: 120, // Margen horizontal izquierdo y derecho
+        textAlign: "center",
         color: "#F5F5F5", // Color del texto
         fontSize: 20
     },
 
     textSubtitulo: {
         color: "#F5F5F5", // Color del texto
-        marginLeft: 135, // Margen horizontal izquierdo y derecho
+        textAlign: "center", // Margen horizontal izquierdo y derecho
         marginTop: 10,
 
     },

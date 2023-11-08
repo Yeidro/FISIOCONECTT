@@ -8,9 +8,19 @@ const accountStack = {
 
 const rutinasStack = {
     tab: "RutinasTab",
-    rutinas: "rutinas"
-
+    rutinas: "rutinas",
+    hombre: "hombre",
+    mujer: "mujer",
+    brazos: "hombre/brazos", // Ruta para la pantalla de brazos dentro de la carpeta "Hombre"
+    abdominales: "hombre/abdominales",
+    gluteos: "hombre/gluteos",
+    piernas: "hombre/piernas",
+    brazosm: "mujer/mujerbrazos",
+    abdominalesm: "mujer/mujerabdominales",
+    gluteosm: "mujer/mujergluteos",
+    piernasm: "mujer/mujerpiernas"
 }
+
 
 const chatStack = {
     tab: "ChatTab",

@@ -13,6 +13,7 @@ export function PagosStack() {
                 options={{ title: "Pagos" }} // Define opciones de navegación, incluyendo el título de la pantalla
             />
 
+
         </Stack.Navigator>
     )
 }
