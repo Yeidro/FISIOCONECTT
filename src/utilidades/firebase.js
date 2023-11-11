@@ -1,6 +1,7 @@
 // Importa la función de inicialización de Firebase desde el SDK de Firebase
 import { initializeApp } from "firebase/app";
 
+
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 

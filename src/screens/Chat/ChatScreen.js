@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, ScrollView, FlatList, Text, TextInput, Button } from 'react-native';
+import { View, FlatList, Text, TextInput, Button } from 'react-native';
 import { useNavigation } from "@react-navigation/native";
 import { styles } from "./ChatScreenstyles";
 
@@ -24,20 +24,18 @@ export function ChatScreen() {
 
   return (
     <View style={styles.container}>
-      <ScrollView style={styles.chatContainer}>
-        {/* Utilice un FlatList o un componente de lista para mostrar los mensajes */}
-        <FlatList
-          data={messages}
-          keyExtractor={(item, index) => index.toString()}
-          renderItem={({ item }) => (
-            <View style={styles.messageContainer}>
-              <Text style={item.sender === 'user' ? styles.userMessage : styles.botMessage}>
-                {item.text}
-              </Text>
-            </View>
-          )}
-        />
-      </ScrollView>
+      <FlatList
+        style={styles.chatContainer}
+        data={messages}
+        keyExtractor={(item, index) => index.toString()}
+        renderItem={({ item }) => (
+          <View style={styles.messageContainer}>
+            <Text style={item.sender === 'user' ? styles.userMessage : styles.botMessage}>
+              {item.text}
+            </Text>
+          </View>
+        )}
+      />
       <View style={styles.inputContainer}>
         <TextInput
           style={styles.input}

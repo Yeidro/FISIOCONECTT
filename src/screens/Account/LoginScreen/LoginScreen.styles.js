@@ -7,7 +7,7 @@ export const styles = StyleSheet.create({ // Define los estilos utilizando Style
     },
 
     image: {
-        resideMode: "contain", // Error tipográfico, debe ser "resizeMode" en lugar de "resideMode"
+        resizeMode: "contain",
         width: "40%", // Ancho de la imagen
         height: 150, // Altura de la imagen
         marginTop: 50, // Margen superior desde la parte superior de la pantalla

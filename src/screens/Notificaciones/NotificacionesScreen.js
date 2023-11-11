@@ -20,20 +20,17 @@ export function NotificacionesScreen() {
 
     return (
         <View style={styles.container}>
-            <ScrollView style={styles.notificacionesContainer}>
-                {/* Utilice un FlatList o un componente de lista para mostrar las notificaciones */}
-                <FlatList
-                    data={notificaciones}
-                    keyExtractor={(item) => item.id.toString()}
-                    renderItem={({ item }) => (
-                        <View style={styles.notificacionContainer}>
-                            <Text style={styles.notificacionText}>
-                                {item.text}
-                            </Text>
-                        </View>
-                    )}
-                />
-            </ScrollView>
+            <FlatList
+                data={notificaciones}
+                keyExtractor={(item) => item.id.toString()}
+                renderItem={({ item }) => (
+                    <View style={styles.notificacionContainer}>
+                        <Text style={styles.notificacionText}>
+                            {item.text}
+                        </Text>
+                    </View>
+                )}
+            />
         </View>
     );
 }
